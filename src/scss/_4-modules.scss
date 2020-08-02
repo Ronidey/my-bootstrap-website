@@ -1,0 +1,101 @@
+.logo {
+  width: 130px;
+}
+
+// ======== Icons =======
+.btn-icon {
+  padding: 0;
+  background: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.burger-icon {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.services-icon {
+  width: 120px;
+  max-height: 120px;
+}
+
+.social-icon {
+  width: 100px;
+  max-height: 110px;
+}
+
+// social icon wrapper
+.social-icons a {
+  transition: transform 300ms ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-10px);
+}
+
+.contact-icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 0.4rem;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  border-radius: 2px;
+  background: $gradient;
+}
+
+// ========== Buttons ============
+.services_btn {
+  background: $gradient;
+  padding: 0.55rem 1.4rem;
+  border-radius: 1.5rem;
+}
+
+/* ========= Review ========== */
+.user-review {
+  border-left: 4px solid rgba($primary, 0.7);
+  margin: 1.5rem 0;
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-intro {
+  line-height: 1.2;
+  font-size: 12px;
+}
+
+// ========= Contact Form ==========
+.contact-form {
+  input:focus {
+    box-shadow: none;
+  }
+
+  button {
+    background: $gradient;
+    color: inherit;
+    border: 0;
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      color: #fff;
+    }
+  }
+}

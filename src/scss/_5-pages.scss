@@ -1,0 +1,24 @@
+// ========== Header ==========
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+// ======== Hero ==========
+.hero {
+  &_img {
+    max-width: 450px;
+  }
+}
+
+.about {
+  &_list li {
+    margin: 0.25rem 0;
+
+    &::before {
+      content: '- ';
+    }
+  }
+}

@@ -1,0 +1,74 @@
+// ========= Navigation ===========
+.navbar {
+  background: $gradient;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scale(0, 1);
+    transition: transform 300ms ease-in-out;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1, 1);
+  }
+}
+
+// ========= sections ===========
+
+.hero,
+.footer {
+  background: $gradient;
+}
+
+.about,
+.contacts {
+  background: #f5f5f5;
+}
+
+.sec {
+  padding: 5rem 0;
+}
+
+.sec_header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.sec_title {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sec_title::before,
+.sec_title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  background: $primary;
+}
+
+.sec_title::before {
+  width: 180px;
+  transform: translate(-50%, 0);
+  height: 5px;
+}
+
+.sec_title::after {
+  transform: translate(-50%, 25%);
+  width: 60px;
+  height: 10px;
+}
